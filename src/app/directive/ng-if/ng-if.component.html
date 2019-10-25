@@ -1,0 +1,12 @@
+<nb-card>
+    <nb-card-body>
+      <h1 *ngIf="str">str이 있다면 출력 str: {{ str }}</h1>
+      <h1 *ngIf="str == 'hello'">비교연산도 가능</h1>
+  
+      <input type="checkbox" [(ngModel)]="isFlag"> 체크해야만 버튼이보임<br>
+      <button *ngIf="isFlag">전송</button><br>
+      <input [(ngModel)]="num" type="number"><br>
+      숫자를 올리면
+      <h3 *ngIf="num">보입니다.</h3>
+    </nb-card-body>
+  </nb-card>

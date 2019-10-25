@@ -1,0 +1,15 @@
+<nb-card>
+    <nb-card-body>
+      클래스 변수 i: {{ i }}<br>
+      산술: {{ 1+2 }}<br>
+      클래스 변수 str: {{ str }}<br>
+      메소드 say(): {{ say() }}<br>
+  
+      <br>
+  
+      <input [disabled]="flag"><br>
+      <input [disabled]="!flag"><br>
+      <input [value]="say()"><br>
+      <button (click)="clickBind()">event</button>
+    </nb-card-body>
+  </nb-card>
